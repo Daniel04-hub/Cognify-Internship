@@ -58,4 +58,18 @@
       z-index: 1000;
     }
 
-    
+    /* Dream Decoder: force black text in light theme */
+    body:not(.dark-theme) #chat-dream,
+    body:not(.dark-theme) #chat-dream *,
+    body:not(.dark-theme) #dreamChatBox {
+      color: #000 !important;
+    }
+
+    /* Preserve message-specific colors */
+    body:not(.dark-theme) #dreamChatBox .chat-message.user {
+      color: blue !important;
+    }
+    body:not(.dark-theme) #dreamChatBox .chat-message.bot {
+      color: darkgreen !important;
+    }
+
